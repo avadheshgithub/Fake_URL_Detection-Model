@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="View the safety analysis of your URL." />
+    <meta
+      name="keywords"
+      content="phishing url, cybersecurity, machine learning, python"
+    />
+    <meta name="author" content="VAIBHAV BICHAVE" />
+    <title>URL Analysis Result</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Analysis Result</h1>
+        <p>Here's what we found about your URL</p>
+      </header>
+
+      <main class="result-container">
+        <div class="result-card" data-score="{{ xx }}">
+          <h2>URL: <a href="{{ url }}" target="_blank">{{ url }}</a></h2>
+          <div class="prediction" id="prediction"></div>
+
+          <div class="button-group">
+            <button
+              class="btn btn-safe"
+              id="btn-safe"
+              style="display: none"
+              onclick="window.open('{{url}}', '_blank')"
+            >
+              Continue to Site
+            </button>
+            <button
+              class="btn btn-danger"
+              id="btn-danger"
+              style="display: none"
+              onclick="window.open('{{url}}', '_blank')"
+            >
+              Proceed with Caution
+            </button>
+            <a href="/" class="btn btn-primary">Check Another URL</a>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <style>
+          footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+          }
+          .contact p {
+            margin: 10px 0;
+          }
+          .contact ul {
+            list-style: none;
+            padding: 0;
+          }
+          .contact ul li {
+            display: inline;
+            margin: 0 10px;
+          }
+          .contact ul li a {
+            color: white;
+            text-decoration: none;
+          }
+          .contact ul li a:hover {
+            text-decoration: underline;
+          }
+        </style>
+
+        <p><b>© 2025 AVADHESH KUMAR SHAH | Powered by @</b></p>
+        <br />
+        <div class="contact">
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/avadhesh-kumar-shah-39b987245/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/avadheshgithub/" target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li><a href="avadheshkumarshah578@gmail.com">Gmail</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Get the score from the data attribute
+      const resultCard = document.querySelector(".result-card");
+      let score = parseFloat(resultCard.dataset.score);
+
+      // Validate and normalize the score
+      score =
+        typeof score === "number" && !isNaN(score) && score >= 0 && score <= 1
+          ? score
+          : 0.5;
+
+      let percentage = score * 100;
+      if (score < 0.5) {
+        percentage = 100 - percentage;
+      }
+
+      const predictionEl = document.getElementById("prediction");
+      const safeBtn = document.getElementById("btn-safe");
+      const dangerBtn = document.getElementById("btn-danger");
+
+      if (score >= 0.5) {
+        predictionEl.innerHTML = `This website is ${percentage.toFixed(
+          1
+        )}% safe to use`;
+        predictionEl.style.color = "#00ff87";
+        safeBtn.style.display = "inline-block";
+      } else {
+        predictionEl.innerHTML = `This website is ${percentage.toFixed(
+          1
+        )}% unsafe to use`;
+        predictionEl.style.color = "#ff4b4b";
+        dangerBtn.style.display = "inline-block";
+      }
+    </script>
+  </body>
+</html>
