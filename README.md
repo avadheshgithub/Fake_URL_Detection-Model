@@ -1,5 +1,6 @@
-# Phishing URL Detection 
+# Fake URL Detection 
 
+Url : - https://fake-url-detection-model-2.onrender.com
 ![Screenshot 2025-04-02 121417](https://github.com/user-attachments/assets/239f67d8-04b1-4d50-8ff7-a642422d09a7)
 
 ![Screenshot 2025-04-02 121505](https://github.com/user-attachments/assets/202ff6d8-9939-4f05-940b-96e53c8c4e46)
