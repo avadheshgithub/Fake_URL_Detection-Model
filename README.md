@@ -1,4 +1,51 @@
-# Fake URL Detection 
+# 🎯 Phishing URL Detection using Machine Learning
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![ML Project](https://img.shields.io/badge/Machine%20Learning-Phishing%20Detection-red)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Notebook](https://img.shields.io/badge/Platform-Jupyter-informational)
+
+---
+
+## 📌 Overview - 
+
+Phishing is one of the most common cyber-attacks targeting users via malicious links. This project leverages various **machine learning algorithms** to build a predictive model that detects whether a given URL is phishing or legitimate.
+
+> ⚠️ Real-time web security is critical. This project aims to contribute to safer internet browsing using intelligent systems.
+
+> Url - https://fake-url-detection-model-2.onrender.com
+
+---
+
+## 🧠 Models Used
+
+The following models were trained and evaluated using a labeled dataset of phishing and legitimate URLs:
+
+| Algorithm               | Accuracy    | Precision   | Recall      | F1 Score    |
+|------------------------|-------------|-------------|-------------|-------------|
+| ✅ **Random Forest**        | **97.21%**   | 0.97        | 0.97        | 0.97        |
+| ✅ Decision Tree         | 93.11%      | 0.93        | 0.93        | 0.93        |
+| ✅ Logistic Regression   | 91.78%      | 0.92        | 0.92        | 0.92        |
+| ✅ K-Nearest Neighbors   | 89.92%      | 0.90        | 0.89        | 0.89        |
+| ✅ Gaussian NB           | 87.68%      | 0.88        | 0.88        | 0.88        |
+| ✅ SVM                   | 94.21%      | 0.94        | 0.94        | 0.94        |
+
+🏆 **Random Forest** was the top-performing model and selected for final deployment.
+
+---
+
+## 🛠️ Tech Stack
+
+| Component         | Tech Used             |
+|------------------|-----------------------|
+| 👩‍💻 Programming    | Python 3.9+            |
+| 📚 Libraries      | Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn |
+| 🔍 ML Algorithms  | Random Forest, Decision Tree, Logistic Regression, KNN, SVM, Gaussian NB |
+| 📁 Dataset        | Public phishing URL dataset from Kaggle/UCI |
+| 📓 Environment    | Jupyter Notebook      |
+
+---
 
 Url : - https://fake-url-detection-model-2.onrender.com
 
