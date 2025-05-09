@@ -12,7 +12,7 @@
 
 Phishing is one of the most common cyber-attacks targeting users via malicious links. This project leverages various **machine learning algorithms** to build a predictive model that detects whether a given URL is phishing or legitimate.
 
-> ⚠️ Real-time web security is critical. This project aims to contribute to safer internet browsing using intelligent systems.
+> ⚠️ Real-time web security is critical. This project uses intelligent systems to contribute to safer internet browsing.
 
 > Url - https://fake-url-detection-model-2.onrender.com
 
