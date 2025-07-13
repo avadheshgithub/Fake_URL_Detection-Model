@@ -1,13 +1,6 @@
 # 🎯 Phishing URL Detection using Machine Learning
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Python](https://img.shields.io/badge/Python-3.9+-blue)
-![ML Project](https://img.shields.io/badge/Machine%20Learning-Phishing%20Detection-red)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Notebook](https://img.shields.io/badge/Platform-Jupyter-informational)
-
 ---
-
 ## 📌 Overview - 
 
 Phishing is one of the most common cyber-attacks targeting users via malicious links. This project leverages various **machine learning algorithms** to build a predictive model that detects whether a given URL is phishing or legitimate.
@@ -15,6 +8,12 @@ Phishing is one of the most common cyber-attacks targeting users via malicious l
 > ⚠️ Real-time web security is critical. This project uses intelligent systems to contribute to safer internet browsing.
 
 > Url - https://fake-url-detection-model-2.onrender.com
+
+## [ Web App Interface ]
+![Screenshot 2025-04-02 121417](https://github.com/user-attachments/assets/239f67d8-04b1-4d50-8ff7-a642422d09a7)
+
+![Screenshot 2025-04-02 121505](https://github.com/user-attachments/assets/202ff6d8-9939-4f05-940b-96e53c8c4e46)
+
 
 ---
 
@@ -49,14 +48,6 @@ The following models were trained and evaluated using a labeled dataset of phish
 
 Url : - https://fake-url-detection-model-2.onrender.com
 
-# Web App Interface
-![Screenshot 2025-04-02 121417](https://github.com/user-attachments/assets/239f67d8-04b1-4d50-8ff7-a642422d09a7)
-
-![Screenshot 2025-04-02 121505](https://github.com/user-attachments/assets/202ff6d8-9939-4f05-940b-96e53c8c4e46)
-
-## Introduction
-
-The Internet has become an indispensable part of our lives, However, it also has provided opportunities to perform malicious activities like phishing anonymously. Phishers try to deceive their victims by social engineering or creating mockup websites to steal information such as account ID, username, and password from individuals and organizations. Although many methods have been proposed to detect phishing websites, phishing methods have evolved to escape from these detection methods. One of the most successful methods for detecting these malicious activities is Machine Learning. This is because most Phishing attacks have some common characteristics that machine learning methods can identify.
 
 
 ## Installation
